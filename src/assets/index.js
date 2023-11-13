@@ -21,10 +21,12 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import aptech from "./company/cropped-aptech-logo-180x180.jpeg";
+import zummit from "./company/zummit.png";
+import upwork from "./company/Upwork-Logo-1.png";
+import vanguard from "./company/vanguardlogo.png";
+import fudap from "./company/fudap_logo.png";
+import dowell from "./company/dowell_logo.jpg";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -53,10 +55,12 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  aptech,
+  vanguard,
+  zummit,
+  upwork,
+  fudap,
+  dowell,
   carrent,
   jobit,
   tripguide,
