@@ -2,7 +2,7 @@
 
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
-import { github } from '../assets';
+import { appstore, github, playstore } from '../assets';
 import { fadeIn } from '../utils/motion';
 
 export const ProjectCard = ({
@@ -12,6 +12,9 @@ export const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  link,
+  playstore_link,
+  appstore_link,
 }) => {
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
@@ -30,22 +33,55 @@ export const ProjectCard = ({
             className="object-cover w-full h-full rounded-2xl"
           />
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, '_blank')}
-              className="flex items-center justify-center w-10 h-10 rounded-full cursor-pointer black-gradient"
-            >
-              <img
-                src={github}
-                alt="source code"
-                className="object-contain w-1/2 h-1/2"
-              />
-            </div>
+          <div className="absolute inset-0 flex justify-end m-2 card-img_hover">
+            {source_code_link != '' && (
+              <div
+                onClick={() => window.open(source_code_link, '_blank')}
+                className="flex items-center justify-center w-10 h-10 rounded-full cursor-pointer black-gradient"
+              >
+                <img
+                  src={github}
+                  alt="source code"
+                  className="object-contain w-1/2 h-1/2"
+                />
+              </div>
+            )}
+            {playstore_link && (
+              <div
+                onClick={() => window.open(playstore_link, '_blank')}
+                className="flex items-center justify-center w-10 h-10 rounded-full cursor-pointer black-gradient mr-2"
+              >
+                <img
+                  src={playstore}
+                  alt="playstore"
+                  className="object-cover w-1/2 h-1/2"
+                />
+              </div>
+            )}
+            {appstore_link && (
+              <div
+                onClick={() => window.open(appstore_link, '_blank')}
+                className="flex items-center justify-center w-10 h-10 rounded-full cursor-pointer black-gradient"
+              >
+                <img
+                  src={appstore}
+                  alt="appstore"
+                  className="object-cover w-1/2 h-1/2"
+                />
+              </div>
+            )}
           </div>
         </div>
 
         <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+          <h3
+            className="text-white font-bold text-[24px] cursor-pointer"
+            onClick={() => {
+              link != '' && window.open(link, '_blank');
+            }}
+          >
+            {name}
+          </h3>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
 
