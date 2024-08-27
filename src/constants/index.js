@@ -24,9 +24,6 @@ import {
   nextjs,
   python,
   reactnative,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   fudap,
   vanguard,
@@ -37,18 +34,17 @@ import {
   rentspace,
   dowell_website,
   ecommerce_site,
-  first_portfolio,
   metamask,
   nowon,
   rentspace_app,
   rentspace_site,
-  school_portfolio,
-  second_portfolio,
   ssll,
   swiftwave,
   vanguard_app,
   vanguard_website,
   zummit_site,
+  soundz,
+  nurika,
 } from '../assets';
 
 export const navLinks = [
@@ -581,6 +577,71 @@ const projects = [
     image: ssll,
     source_code_link: 'https://github.com/CreedTech/savannah_living',
     link: 'https://ssll.pythonanywhere.com/',
+  },
+  {
+    name: 'Soundz Music App',
+    description:
+      'A Music app built with flutter for streaming from spotify, youtube, locally e.t.c, also has features for complete app customisation.',
+    tags: [
+      {
+        name: 'flutter',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'dart',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: soundz,
+    source_code_link: 'https://github.com/CreedTech/soundz',
+    link: '',
+  },
+  {
+    name: 'Nurika Health App',
+    description:
+      'A free lifestyle app that combines fitness and cryptocurrency rewards to transform your wellness journey.',
+    tags: [
+      {
+        name: 'flutter',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'dart',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: nurika,
+    source_code_link: 'https://github.com/CreedTech/nurika_mobile',
+    appstore_link:
+      'https://apps.apple.com/ng/app/nurika-exercise-get-rewards/id6472654895',
+    playstore_link:
+      'https://play.google.com/store/apps/details?id=health.nurika.app&pcampaignid=web_share',
+  },
+  {
+    name: 'Krypt',
+    description:
+      'A Web3 test project using goerli test faucets to send crypto and display gifs after successful transactions.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'scss',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'solidity',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'javascript',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: metamask,
+    source_code_link: 'https://github.com/CreedTech/web_3_test_project',
+    link: 'https://web-3-test-project.vercel.app/',
   },
 ];
 

@@ -45,7 +45,6 @@ const Navbar = () => {
           <img src={logo} alt="logo" className="object-contain w-9 h-9" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
             Ayoola &nbsp;
-            <span className="hidden sm:block"> | Lazy Programmer</span>
           </p>
         </Link>
 

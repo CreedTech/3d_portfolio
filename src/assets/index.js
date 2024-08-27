@@ -56,6 +56,8 @@ import swiftwave from './projects/swiftwave.png';
 import vanguard_app from './projects/vanguard_app.png';
 import vanguard_website from './projects/vanguard.png';
 import zummit_site from './projects/zummit.png';
+import soundz from './projects/soundz.png';
+import nurika from './projects/nurika.png';
 
 import playstore from './playstore.png';
 import appstore from './appstore.png';
@@ -118,4 +120,6 @@ export {
   zummit_site,
   playstore,
   appstore,
+  soundz,
+  nurika,
 };
