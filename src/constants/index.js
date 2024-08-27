@@ -274,10 +274,10 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
+      "Ayodele Ayoola is one of the greatest developer i've known and worked with. ",
+    name: 'Desmond Ucha',
+    designation: 'CEO',
+    company: "Warlock's web",
     image: 'https://randomuser.me/api/portraits/women/4.jpg',
   },
   {
