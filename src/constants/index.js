@@ -499,6 +499,7 @@ const projects = [
     ],
     image: dowell_website,
     source_code_link: '',
+    link: 'https://dowellresearch.uk/',
   },
   {
     name: 'Dales Ecommerce',
@@ -524,7 +525,7 @@ const projects = [
     ],
     image: ecommerce_site,
     source_code_link: 'https://github.com/CreedTech/ecommerce-project',
-    link: 'https://dales.vercel.app/',
+    link: 'https://dales-shop.vercel.app/',
   },
   {
     name: 'Nowon Security',
