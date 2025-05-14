@@ -12,6 +12,9 @@ export const FeedbackCard = ({
 }) => (
   <motion.div
     variants={fadeIn('', 'spring', index * 0.5, 0.75)}
+       initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.3 }}
     className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full"
   >
     <p className="text-white font-black text-[48px]">&quot;</p>

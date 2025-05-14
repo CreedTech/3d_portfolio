@@ -17,7 +17,12 @@ export const ProjectCard = ({
   appstore_link,
 }) => {
   return (
-    <motion.div variants={fadeIn('up', 'spring', index * 0.1, 0.75)}>
+    <motion.div
+      variants={fadeIn('up', 'spring', index * 0.1, 0.75)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.3 }}
+    >
       <Tilt
         options={{
           max: 45,
